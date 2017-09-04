@@ -1,0 +1,20 @@
+.message-board{
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.list-group-item-username {
+    color: blue;
+}
+
+input#message {
+    overflow: hidden;
+}
+
+.chat-box {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    height: 150px;
+}

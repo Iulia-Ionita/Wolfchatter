@@ -1,0 +1,15 @@
+<agm-map [latitude]="lat" [longitude]="lng" (mapClick)="mapClicked($event)">
+    <agm-marker
+        *ngFor="let marker of markers; let i = index"
+        (markerClick)="clickedMarker(marker.lat, marker.lng, infoWindow ,i)"
+        [latitude]="marker.lat"
+        [longitude]="marker.lng"
+        [label]="marker.label"
+        [markerDraggable]="marker.draggable">
+            <agm-info-window #infoWindow>
+                <div class="map-details">This is the chat room for coordinates</div>
+                <div class="map-coordinates"> {{marker.lat}}  , {{marker.lng}}</div>
+                <app-chat-box></app-chat-box>
+            </agm-info-window>
+    </agm-marker>
+</agm-map>
