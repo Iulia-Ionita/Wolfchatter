@@ -34,6 +34,7 @@ export class ChatBoxComponent implements OnInit {
 
     /* Clears data from the message input field */
     onClearMessage() {
+        this.newMessage.username = '';
         this.newMessage.message = '';
     }
 
