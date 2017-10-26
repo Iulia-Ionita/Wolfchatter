@@ -37,6 +37,10 @@ export class ChatBoxComponent implements OnInit {
         this.newMessage.message = '';
     }
 
+    onAddAnonymous() {
+        this.newMessage.username = 'Anonymous';
+    }
+
     /* Add new message to the window */
     onAddMessage() {
         this.newMessage.date = this.messageDate;

@@ -18,3 +18,7 @@ input#message {
     bottom: 0;
     height: 150px;
 }
+
+.anonymous-button {
+    float: right;
+}
